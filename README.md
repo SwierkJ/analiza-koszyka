@@ -29,4 +29,10 @@ Panel **Source Control** → opis → **Commit** → **Sync Changes** (albo `git
 
 ## 4. Rekomendacja dla kierownika sklepu
 
-(uzupełnij: dwie reguły do działania z liczbami, działanie dla każdej, jedna reguła, której nie polecasz, plan testu A/B, adres aplikacji)
+# Analiza koszyka — EconoShop Express
+
+Aplikacja dostępna pod adresem: https://twoja-nazwa-aplikacji.onrender.com
+
+## Rekomendacja dla kierownika sklepu
+
+Na podstawie analizy 7 968 paragonów rekomenduję podjęcie działań dla dwóch silnych reguł asocjacyjnych. Pierwszą z nich jest `makaron -> sos pomidorowy` (207 wspólnych paragonów, pewność 0,312, lift 5,97), dla której zalecam ustawienie sosu pomidorowego na półce bezpośrednio obok makaronu bez wprowadzania jakichkolwiek rabatów. Rabat 20% wygenerowałby stratę w wysokości -273,80 zł w ciągu 2 miesięcy z uwagi na dopłacanie do 207 klientów, którzy i tak kupują oba produkty, podczas gdy sama zmiana ekspozycji przyniesie szacunkowo +47,99 zł czystego zysku. Drugą rekomendowaną regułą jest `pieluchy -> chusteczki nawilżane` (108 paragonów, pewność 0,307, lift 6,33), gdzie warto wprowadzić stałą ofertę zestawu promocyjnego przy kasach. Zdecydowanie nie polecam wdrażania akcji promocyjnej na regułę `węgiel drzewny -> kiełbasa` — mimo wysokiego liftu we wrześniu (6,94 na 117 paragonach), reguła ta w październiku spadła do zaledwie 2 paragonów i uległa przedawnieniu w wyniku pułapki sezonowości po zakończeniu sezonu grillowego. Skuteczność proponowanej zmiany ekspozycji sosu przy makaronie zweryfikujemy poprzez test A/B: w połowie sklepów ustawiamy sos obok makaronu, a drugą połowę pozostawiamy bez zmian, porównując po 4 tygodniach średnią sprzedaż sosu przypadającą na 100 paragonów z makaronem.
