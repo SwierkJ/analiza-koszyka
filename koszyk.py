@@ -28,21 +28,17 @@ def _lista(x) -> list[str]:
 
 def wsparcie(K: pd.DataFrame, produkty) -> float:
     """Część paragonów, na których są WSZYSTKIE podane produkty (jeden produkt albo lista)."""
-    # TODO 1: weź kolumny K[_lista(produkty)], sprawdź, w których wierszach WSZYSTKIE są True (.all(axis=1)),
-    #         i policz średnią (.mean()): średnia z True/False = odsetek paragonów.
-    raise NotImplementedError("TODO 1: uzupełnij funkcję wsparcie")
+    return float(K[_lista(produkty)].all(axis=1).mean())
 
 
 def pewnosc(K: pd.DataFrame, A, B) -> float:
     """Pewność reguły A → B: wsparcie(A i B) / wsparcie(A)."""
-    # TODO 2: wsparcie(A i B) / wsparcie(A). Podpowiedź: wsparcie(K, _lista(A) + _lista(B)) to wsparcie pary.
-    raise NotImplementedError("TODO 2: uzupełnij funkcję pewnosc")
+    return wsparcie(K, _lista(A) + _lista(B)) / wsparcie(K, A)
 
 
 def lift(K: pd.DataFrame, A, B) -> float:
     """Lift reguły A → B: pewność(A → B) / wsparcie(B)."""
-    # TODO 3: pewność(A -> B) / wsparcie(B)
-    raise NotImplementedError("TODO 3: uzupełnij funkcję lift")
+    return pewnosc(K, A, B) / wsparcie(K, B)
 
 
 def liczba(K: pd.DataFrame, produkty) -> int:
